@@ -91,5 +91,26 @@ var bfb_referer = '';
 var bfb_ua = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36';
 
 
+<script language="JavaScript">
+
+　　var rand ;
+　　var ad = new Array( ) ;
+
+　　//　ad.push('【ランダム表示する画像や広告のhtmlタグ】')　という形で以下に記述します。
+　　// 要素はいくつ追加しても構いません。　　
+　　
+　　//　↓要素の追加は以下から　
+
+　　　　ad.push( ' <iframe src="https://google.com" border="0" frameborder="0"> </iframe> ' );
+　　　　ad.push( ' <iframe src="https://yahoo.co.jp" border="0" frameborder="0"> </iframe> ' );
+
+　　//　↑要素の追加ここまで
+
+　　rand = Math.floor( (Math.random( ) * 100 )) % ad.length ;
+　　document.write( ad[rand] ) ;
+
+</script>
+
+
 </body>
 </html>
