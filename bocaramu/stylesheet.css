@@ -1,0 +1,110 @@
+body {
+    font-family: "ヒラギノ角ゴ";
+}
+
+li {
+    list-style: none;
+}
+
+.header {
+    background-color: #fab12b;
+    color: rgb(255, 255, 255);
+    position: relative;
+    top: -20px;
+    left: -10px;
+    width: 1442px;
+    height: 100px;
+}
+
+.header-logo {
+    float: left;
+}
+
+.header-logo-main {
+    position: relative;
+    left: 10px;
+    font-size: 32px;
+    padding: 0px 0px 0px 25px;
+}
+
+.header-logo-sub {
+    font-size: 16.5px;
+}
+
+.header-list {
+    float: right;
+    font-size: 20px;
+    list-style-type: none;
+}
+
+.header-list a {
+    display: block;
+    text-align: center;
+    background-color: #fab12b;
+    color: #ffffff;
+    padding: 30px 60px;
+    position: relative;
+    top: -10px;
+    right: 10px;
+    text-decoration: none;
+    
+}
+
+.header-list a:hover {
+    background: #fcd183;
+    transition: 1000ms;
+}
+
+.main {
+    text-align: center;
+}
+
+.main-button {
+    background-color: #dee7ec;
+    color: #889eab;
+}
+
+
+
+.footer {
+    background-color: #2f5167;
+    color: #fff;
+    position: relative;
+    top: -20px;
+    left: -10px;
+    width: 1362px;
+    height: 35px;
+    padding: 40px;
+}
+
+.footer-logo {
+    float: left;
+    font-size: 30px;
+}
+
+.footer-list {
+    float: right;
+}
+
+.footer-list li {
+    font-size: 20px;
+}
+
+.footer-list a {
+    padding: 50px 0px 0px 0px;
+    width: 170px;
+    height: 65px;
+    display: block;
+    text-align: center;
+    background-color: #2f5167;
+    color: #ffffff;
+    text-decoration: none;
+    position: relative;
+    top: -56px;
+    right: -25px;
+}
+
+.footer-list a:hover {
+    background: #6a94b1;
+    transition: 1000ms;
+}
