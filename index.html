@@ -1,35 +1,56 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Yuzupon1133's page</title>
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-</head>
-<body>
-  <header>
-    <div class="container">
-      <span class="fa fa-bars menu-icon"></span>
-      <div class="header-left">
-        <a herf="https://yuzupon1133.github.io">Yuzupon1133's page</a>
-      </div>
-      <span class="fa fa-bars menu-icon"></span>
-      <div class="header-right">
-        <a href="pointsites.html">ポイントサイトのご紹介!</a>
-      </div>
-    </div>
-  </header>
-  <div class="top-wrapper">
-    <div class="container">
-      <h1>Yuzupon1133's project<br>screenshot</h1>
-      <p>Scratchでほぼ毎日、気ままにプロジェクトを作っているYuzupon1133です。<br>週に1,2個のプロジェクトを共有しています。</p>
-    </div>
-  </div>
-  <footer>
-    <div class="container">
-      <p>Yuzupon1133</p>
-    </div>
-  </footer>
-</body>
+<html lang='ja'>
+    <head>
+        <meta charset="utf-8">
+        <title>ボカラム - ボカロランダム選曲サイト</title>
+        <link rel="stylesheet" href="index_stylesheet.css">
+        <header>
+          <div class="header">
+              <div class="header-logo">
+                  <ul>
+                      <li class="header-logo-main">ボカラム</li>
+                      <li class="header-logo-sub">ボカロランダム選曲サイト</li>
+                  </ul>
+              </div>
+              <div class="header-list">
+                  <ul>
+                      <li>
+                          <a href="about.html">About</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+        </header>
+        <script>
+            function chose_music () {
+                var minrandom = 0
+                var maxrandom = 3;
+                var random = Math.floor( Math.random() * ((maxrandom + 1) - minrandom) + minrandom );
+                var items = ['リンゴ', 'イチゴ', 'メロン', 'バナナ'];
+                document.getElementById("show_text").innerHTML = items[random] ;
+            };
+        </script>
+    </head>
+    <body>
+        <div class="main">
+            <input type="submit" class="main-button" value="さっそく選曲してもらう" onclick="chose_music();">
+        </div>
+        <div id="show_music">
+            <p id="show_text" class="middle-text"></p>
+        </div>
+
+
+
+        <div class="footer">
+            <div class="footer-logo">ボカラム</div>
+            <div class="footer-list">
+              <ul>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+    </body>
 </html>
