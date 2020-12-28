@@ -421,7 +421,7 @@ function chose_music () {
         '',    //←林檎花火とソーダの海 から
     ];
     document.getElementById("show_text").innerHTML = `選ばれたのは...<span class="span-big">` +  items[random] + `</span>です!`;
-    gazou(items[random], imgs[random]);
+    //gazou(items[random], imgs[random]);
 };
 
 function gazou(img, url) {
