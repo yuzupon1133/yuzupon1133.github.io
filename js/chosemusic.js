@@ -420,7 +420,7 @@ function chose_music () {
         '_Av1NkJQkkU',
         '',    //←林檎花火とソーダの海 から
     ];
-    document.getElementById("show_text").innerHTML = `選ばれたのは...<span class="span-big">` +  items[random] + `</span>です!`;
+    document.getElementById("show_text").innerHTML = `選ばれたのは...<span class="span-big"><a href="https://www.youtube.com/results?search_query=` +  items[random] + `%20official" class="span-big-url">` + items[random] + `</a></span>です!`;
     //gazou(items[random], imgs[random]);
 };
 
