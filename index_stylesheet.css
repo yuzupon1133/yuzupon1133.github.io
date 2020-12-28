@@ -98,6 +98,7 @@ input, textarea {
     font-size: 45px;
 }
 
+
 .span-big-url {
     text-decoration: none;
     color: rgb(255, 81, 0);
@@ -106,6 +107,7 @@ input, textarea {
 .span-big-url:active {
     color: rgb(255, 81, 0);
 }
+
 
 .footer {
     background-color: #2f5167;
